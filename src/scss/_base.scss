@@ -17,6 +17,9 @@ body {
             text-align: center;
             line-height: 100vh;
         }
+        @include sp-layout {
+            background-size: 90%;
+        }
     }
     .kashikan_main{
         margin-top: 100vh;
@@ -34,6 +37,19 @@ body {
                 line-height: 2.6;
                 letter-spacing: 2px;
             }
+            @include sp-layout {
+                width: 94%;
+                padding-top: 120px;
+                h2 {
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+                p {
+                    margin-top: 24px;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                }
+            }
         }
         .kashikan_outline {
             padding-top: 240px;
@@ -47,6 +63,19 @@ body {
                 margin-top: 24px;
                 line-height: 3;
                 letter-spacing: 2px;
+            }
+            @include sp-layout {
+                width: 94%;
+                padding-top: 120px;
+                h2 {
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+                p {
+                    margin-top: 24px;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                }
             }
         }
         .kashikan_footer {
@@ -65,6 +94,20 @@ body {
             }
             .copyright {
                 font-size: 10px;
+            }
+            @include sp-layout {
+                width: 94%;
+                padding-top: 120px;
+                padding-bottom: 60px;
+                h2 {
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+                p {
+                    margin-top: 24px;
+                    line-height: 2;
+                    letter-spacing: 1px;
+                }
             }
         }
     }

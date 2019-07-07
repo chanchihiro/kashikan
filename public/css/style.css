@@ -64,7 +64,7 @@ body {
       line-height: 100vh; }
   body .kashikan_main {
     margin-top: 100vh;
-    background-color: rgba(255, 255, 255, 0.9); }
+    background-color: rgba(0, 0, 0, 0.8); }
     body .kashikan_main .kashikan_introduction {
       width: 960px;
       margin: 0 auto;
@@ -73,9 +73,9 @@ body {
         font-size: 32px;
         letter-spacing: 4px; }
       body .kashikan_main .kashikan_introduction p {
-        margin-top: 24px;
+        margin-top: 32px;
         line-height: 2.6;
-        letter-spacing: 1px; }
+        letter-spacing: 2px; }
     body .kashikan_main .kashikan_outline {
       padding-top: 240px;
       width: 960px;
@@ -99,12 +99,14 @@ body {
         margin-top: 24px;
         line-height: 1.5;
         letter-spacing: 2px; }
+      body .kashikan_main .kashikan_footer .copyright {
+        font-size: 10px; }
 
 .wrapper {
-  font-family: sans-serif;
+  font-family: yugothic, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  color: #000; }
+  color: #fff; }
 
 .sample-icon {
   margin: 10px 0px;
@@ -112,3 +114,38 @@ body {
   height: 128px;
   background-image: url("/img/html5.png");
   background-repeat: no-repeat; }
+
+@media (max-width: 839px) {
+      body .kashikan-top {
+        background-size: 90%; }
+        body .kashikan_main .kashikan_introduction {
+          width: 94%;
+          padding-top: 120px; }
+          body .kashikan_main .kashikan_introduction h2 {
+            font-size: 24px;
+            letter-spacing: 2px; }
+          body .kashikan_main .kashikan_introduction p {
+            margin-top: 24px;
+            line-height: 2;
+            letter-spacing: 1px; }
+        body .kashikan_main .kashikan_outline {
+          width: 94%;
+          padding-top: 120px; }
+          body .kashikan_main .kashikan_outline h2 {
+            font-size: 24px;
+            letter-spacing: 2px; }
+          body .kashikan_main .kashikan_outline p {
+            margin-top: 24px;
+            line-height: 2;
+            letter-spacing: 1px; }
+        body .kashikan_main .kashikan_footer {
+          width: 94%;
+          padding-top: 120px;
+          padding-bottom: 60px; }
+          body .kashikan_main .kashikan_footer h2 {
+            font-size: 24px;
+            letter-spacing: 2px; }
+          body .kashikan_main .kashikan_footer p {
+            margin-top: 24px;
+            line-height: 2;
+            letter-spacing: 1px; } }
