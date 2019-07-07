@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+body {
+  background-color: #f6f6f6;
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+  body .kashikan-top {
+    background-image: url("/img/kashikanlogo_kari.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    body .kashikan-top h1 {
+      text-align: center;
+      line-height: 100vh; }
+  body .kashikan_main {
+    margin-top: 100vh;
+    background-color: rgba(255, 255, 255, 0.9); }
+    body .kashikan_main .kashikan_introduction {
+      width: 960px;
+      margin: 0 auto;
+      padding-top: 240px; }
+      body .kashikan_main .kashikan_introduction h2 {
+        font-size: 32px;
+        letter-spacing: 4px; }
+      body .kashikan_main .kashikan_introduction p {
+        margin-top: 24px;
+        line-height: 2.6;
+        letter-spacing: 1px; }
+    body .kashikan_main .kashikan_outline {
+      padding-top: 240px;
+      width: 960px;
+      margin: 0 auto; }
+      body .kashikan_main .kashikan_outline h2 {
+        font-size: 21px;
+        letter-spacing: 2px; }
+      body .kashikan_main .kashikan_outline p {
+        margin-top: 24px;
+        line-height: 3;
+        letter-spacing: 2px; }
+    body .kashikan_main .kashikan_footer {
+      padding-top: 240px;
+      padding-bottom: 120px;
+      width: 960px;
+      margin: 0 auto; }
+      body .kashikan_main .kashikan_footer h2 {
+        font-size: 21px;
+        letter-spacing: 2px; }
+      body .kashikan_main .kashikan_footer p {
+        margin-top: 24px;
+        line-height: 1.5;
+        letter-spacing: 2px; }
+
+.wrapper {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000; }
+
+.sample-icon {
+  margin: 10px 0px;
+  width: 128px;
+  height: 128px;
+  background-image: url("/img/html5.png");
+  background-repeat: no-repeat; }
