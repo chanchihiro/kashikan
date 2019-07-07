@@ -1,4 +1,68 @@
 body {
-    // 文字サイズの自動調整を無効にする
+    background-color: #f6f6f6;
     text-size-adjust: 100%;
+
+    .kashikan-top {
+        background-image: image-url('kashikanlogo_kari.png');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center center;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        h1 {
+            text-align: center;
+            line-height: 100vh;
+        }
+    }
+    .kashikan_main{
+        margin-top: 100vh;
+        background-color:rgba(255,255,255,0.9);
+        .kashikan_introduction {
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 240px;
+            h2 {
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+            p {
+                margin-top: 24px;
+                line-height: 2.6;
+                letter-spacing: 1px;
+            }
+        }
+        .kashikan_outline {
+            padding-top: 240px;
+            width: 960px;
+            margin: 0 auto;
+            h2 {
+                font-size: 21px;
+                letter-spacing: 2px;
+            }
+            p {
+                margin-top: 24px;
+                line-height: 3;
+                letter-spacing: 2px;
+            }
+        }
+        .kashikan_footer {
+            padding-top: 240px;
+            padding-bottom: 120px;
+            width: 960px;
+            margin: 0 auto;
+            h2 {
+                font-size: 21px;
+                letter-spacing: 2px;
+            }
+            p {
+                margin-top: 24px;
+                line-height: 1.5;
+                letter-spacing: 2px;
+            }
+        }
+    }
 }
