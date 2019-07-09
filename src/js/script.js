@@ -1,11 +1,20 @@
 import { BASE_DIR } from '../constants.yml'
-import Sample from '@/lib/Sample';
 
-const body = document.querySelector(body);
+const kashikanTop = document.querySelector(".kashikan-top");
 
-window.onscroll = function()
-{
-    var scrollTop =
-        document.body.scrollTop || // IE、Firefox、Opera
-        document.body.scrollTop;              // Chrome、Safari
+let mouseWheel;
+if ('onwheel' in document) {
+    mouseWheel = 'wheel';
+} else if ('onmousewheel' in document) {
+    mouseWheel = 'mousewheel';
+} else {
+    mouseWheel = 'DOMMouseScroll';
 }
+
+window.addEventListener('ontouchmove' in window ? 'touchmove' : mouseWheel, () => {
+    if(window.pageYOffset >= 200) {
+        kashikanTop.setAttribute("data-is-active", true);
+    }else {
+        kashikanTop.setAttribute("data-is-active", false);
+    }
+}, { passive: true });

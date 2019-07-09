@@ -49,7 +49,7 @@ body {
   -webkit-text-size-adjust: 100%;
           text-size-adjust: 100%; }
   body .kashikan-top {
-    background-image: url("/img/kashikanlogo_kari.png");
+    background-image: url("/img/logo.png");
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center center;
@@ -62,9 +62,15 @@ body {
     body .kashikan-top h1 {
       text-align: center;
       line-height: 100vh; }
+    body .kashikan-top::before {
+      content: '';
+      display: block;
+      height: 100%;
+      transition: background-color 0.3s ease 0.0s; }
+    body .kashikan-top[data-is-active='true']::before {
+      background-color: rgba(0, 0, 0, 0.8); }
   body .kashikan_main {
-    margin-top: 100vh;
-    background-color: rgba(0, 0, 0, 0.8); }
+    margin-top: 100vh; }
     body .kashikan_main .kashikan_introduction {
       width: 960px;
       margin: 0 auto;
@@ -108,18 +114,11 @@ body {
   line-height: 1.5;
   color: #fff; }
 
-.sample-icon {
-  margin: 10px 0px;
-  width: 128px;
-  height: 128px;
-  background-image: url("/img/html5.png");
-  background-repeat: no-repeat; }
-
 @media (max-width: 839px) {
       body .kashikan-top {
         background-size: 90%; }
         body .kashikan_main .kashikan_introduction {
-          width: 94%;
+          width: 86%;
           padding-top: 120px; }
           body .kashikan_main .kashikan_introduction h2 {
             font-size: 24px;
@@ -129,7 +128,7 @@ body {
             line-height: 2;
             letter-spacing: 1px; }
         body .kashikan_main .kashikan_outline {
-          width: 94%;
+          width: 86%;
           padding-top: 120px; }
           body .kashikan_main .kashikan_outline h2 {
             font-size: 24px;
@@ -139,7 +138,7 @@ body {
             line-height: 2;
             letter-spacing: 1px; }
         body .kashikan_main .kashikan_footer {
-          width: 94%;
+          width: 86%;
           padding-top: 120px;
           padding-bottom: 60px; }
           body .kashikan_main .kashikan_footer h2 {

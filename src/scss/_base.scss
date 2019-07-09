@@ -3,7 +3,7 @@ body {
     text-size-adjust: 100%;
 
     .kashikan-top {
-        background-image: image-url('kashikanlogo_kari.png');
+        background-image: image-url('logo.png');
         background-repeat: no-repeat;
         background-size: 40%;
         background-position: center center;
@@ -17,13 +17,21 @@ body {
             text-align: center;
             line-height: 100vh;
         }
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            transition: background-color 0.3s ease 0.0s;
+        }
+        &[data-is-active= 'true']::before {
+            background-color: rgba(0,0,0,0.8);
+        }
         @include sp-layout {
             background-size: 90%;
         }
     }
     .kashikan_main{
         margin-top: 100vh;
-        background-color:rgba(0,0,0,0.8);
         .kashikan_introduction {
             width: 960px;
             margin: 0 auto;
@@ -38,7 +46,7 @@ body {
                 letter-spacing: 2px;
             }
             @include sp-layout {
-                width: 94%;
+                width: 86%;
                 padding-top: 120px;
                 h2 {
                     font-size: 24px;
@@ -65,7 +73,7 @@ body {
                 letter-spacing: 2px;
             }
             @include sp-layout {
-                width: 94%;
+                width: 86%;
                 padding-top: 120px;
                 h2 {
                     font-size: 24px;
@@ -96,7 +104,7 @@ body {
                 font-size: 10px;
             }
             @include sp-layout {
-                width: 94%;
+                width: 86%;
                 padding-top: 120px;
                 padding-bottom: 60px;
                 h2 {
